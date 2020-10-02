@@ -1,0 +1,32 @@
+h1 {
+  justify-items: center;
+  align-items: center;
+}
+.option {
+  height: 20px;
+}
+
+.box {
+  margin-right: 60px;
+}
+
+#languages {
+  display: flex;
+}
+.checkBoxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.picture {
+  border-radius: 50%;
+}
+
+.lang-img {
+  width: 30px;
+}
+
+.lang-content {
+  padding: 10px;
+}

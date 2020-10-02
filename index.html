@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Desafio Final</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Search - Devs</h1>
+      <div class="input-field">
+        <input id="searchName" type="text" class="validate" autofocus />
+        <label for="searchName">Pesquise por nome</label>
+      </div>
+
+      <div class="checkBoxes row">
+        <div id="languages" class="col s10">
+          <p class="box">
+            <label>
+              <input id="java" type="checkbox" checked />
+              <span>Java</span>
+            </label>
+          </p>
+          <p class="box">
+            <label>
+              <input id="javascript" type="checkbox" checked />
+              <span>JavaScript</span>
+            </label>
+          </p>
+          <p class="box">
+            <label>
+              <input id="python" type="checkbox" checked />
+              <span>Python</span>
+            </label>
+          </p>
+        </div>
+        <div id="buttons" class="col s2">
+          <p>
+            <label>
+              <input
+                id="conditionalAnd"
+                class="with-gap"
+                name="conditional"
+                type="radio"
+              />
+              <span>E</span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input
+                id="conditionalOr"
+                class="with-gap"
+                name="conditional"
+                type="radio"
+                checked
+              />
+              <span>OU</span>
+            </label>
+          </p>
+        </div>
+      </div>
+      <h5><span id="countDevs"> </span> dev(s) encontrado(s)</h5>
+      <div id="totalDevs"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
